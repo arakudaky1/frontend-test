@@ -1,0 +1,23 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Formularz rejestracyjny</title>
+</head>
+<body>
+Formularz rejestracyjny:
+<form method="post" enctype="text/plain" action="index.php">
+  <table>
+    <tr>
+      <td>Podaj imie:</td><td><input type="text" name="imie" placeholder="Jan" required> </td>
+
+    </tr>
+    <tr><td>Podaj nazwisko</td><td><input type="text" name="nazwisko" placeholder="Kowalski" required> </td></tr>
+    <tr><td>Nr telefonu</td><td><input type="tel" pattern="\d{3}-\d{3}-\d{3}$" placeholder="000-000-000">  </td></tr>
+    <tr><td>Podaj login</td><td><input type="text" name="login" required></td></tr>
+    <tr><td>Podaj haslo:</td><td><input type="password" nam="haslo" required></td></tr>
+    <tr><td><input type="reset" value="Wyczysc dane"></td>
+    <td><input type="submit" value="Wyslij dane"></td></tr>
+  </table>
+</form>
+</body>
+</html>
